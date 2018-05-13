@@ -1,0 +1,62 @@
+
+
+
+$skyColourDay: #3BB5EB;
+$skyColourSpooky: #1b2334;
+$woodColour: #f4c279;
+$lightWoodColour: #FBE8B7;
+$flagShadow: #530234;
+// $fontColour: #e8d8b6;
+// $navy: #0D324E;
+$lightBlue: #3BB5EB;
+// $red: #ef4d74;
+
+:root {
+	// colour variables for theming
+	--sky-bg: #3BB5EB; 
+	--sky-bg-spooky:  #1b2334;
+	--wood-colour: #f4c279;
+	--wood-colour-spooky: #0C1928;
+	--lightwood-colour: #FBE8B7;
+	--lightwood-colour-spooky: #1f3045;
+	--ship-accent-spooky: #b3d7dc;
+	--mast-colour: #0D324E;       // formertly $navy
+	--mast-colour-spooky: #293F5D;
+	--cabin-colour: #ef4d74;
+	--cabin-colour-spooky: #964651;
+	--white: #fff;
+	--white-spooky: #e8d8b6;   // formerly fontColour
+
+
+}
+
+
+@mixin pseudo ($width, $height){
+	content: "";
+	position: absolute;
+	width: $width;
+	height: $height;
+}
+
+@mixin window {
+	@include pseudo (20px, 20px);
+	background: linear-gradient(-45deg, var(--mast-colour), var(--mast-colour) 50%, var(--ship-accent-spooky) 50%, var(--ship-accent-spooky));
+	border-radius: 45% 45% 0 0;
+}
+
+@mixin porthole ($width){
+	@include pseudo ($width, $width);
+	border-radius: 50%;
+	border: 5px solid var(--cabin-colour-spooky);
+	background: linear-gradient(-45deg, var(--mast-colour), var(--mast-colour) 50%, var(--ship-accent-spooky) 50%, var(--ship-accent-spooky));
+}
+
+
+
+
+
+
+
+
+
+
