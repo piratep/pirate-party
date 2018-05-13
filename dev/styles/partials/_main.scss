@@ -131,7 +131,11 @@ main.index-main {
 	background: var(--white-spooky);
 	width: 45%;
 	padding: 3rem 3rem 5rem 3rem;
-	
+	min-width: 280px;
+	max-width: 650px;
+	@media (max-width: 500px) {
+		padding: 1rem 1rem 3rem 1rem;
+	}
 	.modal-content {
 		display: flex;
 		flex-direction: column;
