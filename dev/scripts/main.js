@@ -3,7 +3,7 @@ var pirateJs = {};
 
 pirateJs.init = function() {
 	pirateJs.modal();
-	pirateJs.stars();
+	// pirateJs.stars();
 
 };
 
