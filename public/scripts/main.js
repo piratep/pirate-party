@@ -4,7 +4,15 @@ var pirateJs = {};
 
 pirateJs.init = function () {
 	pirateJs.modal();
-	// pirateJs.stars();
+	function getWindowWidth() {
+		return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	};
+	function isMobile() {
+		return getWindowWidth() < 728;
+	};
+	if (isMobile() == false) {
+		pirateJs.stars();
+	};
 };
 
 pirateJs.stars = function () {

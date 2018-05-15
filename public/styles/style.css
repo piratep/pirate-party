@@ -659,6 +659,9 @@ main.index-main {
         order: 2; } }
     main.index-main .details p {
       margin: 0; }
+    main.index-main .details .money {
+      font-size: 1.6rem;
+      margin-top: 1.4rem; }
   main.index-main ul {
     list-style: none;
     padding: 0;
